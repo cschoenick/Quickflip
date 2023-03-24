@@ -1,0 +1,34 @@
+.text-area .scroll-pane .content {
+  -fx-background-color: #3d415b;
+}
+.button {
+  -fx-background-color: transparent;
+}
+.button:hover {
+  -fx-background-color: #51577a;
+  -fx-scale-y: 1.1;
+}
+#taTerm *.text {
+  -fx-text-alignment: center;
+}
+#newBTN {
+  -fx-background-color: #1eb8d1;
+}
+#newBTN.button:hover {
+  -fx-background-color: #92f5ff;
+  -fx-scale-y: 1.1;
+}
+#loadBTN {
+  -fx-background-color: #3f6db4;
+}
+#loadBTN.button:hover {
+  -fx-background-color: #ace0ff;
+  -fx-scale-y: 1.1;
+}
+#exitBTN {
+  -fx-background-color: #ea5456;
+}
+#exitBTN.button:hover {
+  -fx-background-color: #ffadb0;
+  -fx-scale-y: 1.1;
+}

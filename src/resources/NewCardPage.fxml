@@ -21,32 +21,32 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="238.0" layoutY="80.0" text="Term" textFill="WHITE" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="517.5">
+            <Label layoutX="238.0" layoutY="80.0" text="Term" textFill="WHITE" translateX="-43.0" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="517.5">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="197.0" layoutY="116.0" text="Definition" textFill="WHITE" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="511.5">
+            <Label layoutX="197.0" layoutY="116.0" text="Definition" textFill="WHITE" translateX="-43.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="511.5">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="tfTerm" layoutX="315.0" layoutY="79.0" prefHeight="27.0" prefWidth="253.0" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff;" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="232.0">
+            <TextField fx:id="tfTerm" layoutX="315.0" layoutY="79.0" prefHeight="27.0" prefWidth="253.0" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff;" translateX="-43.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="232.0">
                <font>
                   <Font name="Now Bold" size="13.0" />
                </font>
             </TextField>
-            <TextArea fx:id="taDefinition" layoutX="315.0" layoutY="116.0" prefHeight="155.0" prefWidth="253.0" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff; -fx-border-radius: 10000;" stylesheets="@TextArea.css" wrapText="true" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="232.0">
+            <TextArea fx:id="taDefinition" layoutX="315.0" layoutY="116.0" prefHeight="155.0" prefWidth="253.0" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff; -fx-border-radius: 10000;" stylesheets="@Stylesheet.css" translateX="-43.0" wrapText="true" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="232.0">
                <font>
                   <Font name="Now Bold" size="13.0" />
                </font>
             </TextArea>
-            <Button id="termButton" layoutX="177.0" layoutY="148.0" mnemonicParsing="false" onAction="#nextTerm" style="-fx-border-color: #ffffff;" stylesheets="@TextArea.css" text="Next Term" textFill="WHITE">
+            <Button id="termButton" layoutX="177.0" layoutY="148.0" mnemonicParsing="false" onAction="#nextTerm" stylesheets="@Stylesheet.css" text="Next Term" textFill="WHITE" translateX="-43.0">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="370.0" layoutY="286.0" mnemonicParsing="false" onAction="#studyTerms" style="-fx-border-color: #ffffff;" stylesheets="@TextArea.css" text="Study Terms" textFill="WHITE" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="295.5">
+            <Button layoutX="374.0" layoutY="286.0" mnemonicParsing="false" onAction="#studyTerms" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Study Terms" textFill="WHITE" translateX="-43.0" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="291.5">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>

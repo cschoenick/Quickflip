@@ -19,15 +19,15 @@
    <bottom>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="newBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#enterNew" prefHeight="90.0" prefWidth="156.0" style="-fx-background-color: #1EB8D1;" text="New Flashcards" textAlignment="CENTER" textFill="WHITE" translateX="134.0" translateY="-31.0" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="644.0">
+            <Button fx:id="newBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#enterNew" prefHeight="90.0" prefWidth="156.0" stylesheets="@Stylesheet.css" text="New Flashcards" textAlignment="CENTER" textFill="WHITE" translateX="134.0" translateY="-31.0" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="644.0">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font></Button>
-            <Button fx:id="loadBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#enterLoad" prefHeight="90.0" prefWidth="156.0" style="-fx-background-color: #3F6DB4;" text="Load Flashcards" textAlignment="CENTER" textFill="WHITE" translateX="322.0" translateY="-31.0" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="644.0">
+            <Button fx:id="loadBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#enterLoad" prefHeight="90.0" prefWidth="156.0" stylesheets="@Stylesheet.css" text="Load Flashcards" textAlignment="CENTER" textFill="WHITE" translateX="322.0" translateY="-31.0" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="644.0">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font></Button>
-            <Button fx:id="exitBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#exitProgram" prefHeight="90.0" prefWidth="156.0" style="-fx-background-color: EA5456;" text="Exit" textFill="WHITE" translateX="510.0" translateY="-31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="644.0">
+            <Button fx:id="exitBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#exitProgram" prefHeight="90.0" prefWidth="156.0" stylesheets="@Stylesheet.css" text="Exit" textFill="WHITE" translateX="510.0" translateY="-31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="644.0">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font></Button>
