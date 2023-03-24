@@ -11,6 +11,9 @@
 #taTerm *.text {
   -fx-text-alignment: center;
 }
+#taSavePop *.text {
+  -fx-text-alignment: center;
+}
 #newBTN {
   -fx-background-color: #1eb8d1;
 }

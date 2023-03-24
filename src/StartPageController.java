@@ -8,16 +8,12 @@ import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 
 public class StartPageController {
-
     @FXML
     private Button exitBTN;
-
     @FXML
     private Button loadBTN;
-
     @FXML
     private Button newBTN;
-
     @FXML
     private ImageView logo;
 
@@ -30,6 +26,8 @@ public class StartPageController {
     void enterNew(ActionEvent event) throws IOException {
         Quickflip.fileMethod = 1;
         Quickflip.setRoot("NewCardPage");
+        NewCardPageController startNewCard = new NewCardPageController();
+        startNewCard.hidePopup();
         FileWriter fileWriter = new FileWriter("flashcards.txt");
         fileWriter.close();
     }

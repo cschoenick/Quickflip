@@ -46,9 +46,24 @@
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="374.0" layoutY="286.0" mnemonicParsing="false" onAction="#studyTerms" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Study Terms" textFill="WHITE" translateX="-43.0" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="291.5">
+            <Button layoutX="374.0" layoutY="286.0" mnemonicParsing="false" onAction="#showPopup" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Study Terms" textFill="WHITE" translateX="-43.0" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="291.5">
                <font>
                   <Font name="Now Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="taSavePop" editable="false" layoutX="182.0" layoutY="-16.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="386.0" prefWidth="440.0" style="-fx-text-fill: #ffffff;" stylesheets="@Stylesheet.css" text="Do you want to save your flashcards?" wrapText="true" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="182.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Now Bold" size="24.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="btnSave" layoutX="270.0" layoutY="190.0" mnemonicParsing="false" onAction="#saveFlashcards" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Yes" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Now Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNoSave" layoutX="417.0" layoutY="190.0" mnemonicParsing="false" onAction="#studyTerms" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="No" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Now Bold" size="36.0" />
                </font>
             </Button>
          </children>

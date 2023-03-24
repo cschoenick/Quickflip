@@ -10,25 +10,19 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import javafx.scene.text.Text;
 import javafx.scene.transform.Rotate;
 
 public class FlashCardsController {
-
     @FXML
     private ImageView backLogo;
-
     @FXML
     private Text tTerm;
-
     @FXML
     private Text tDefinition;
-
     @FXML
     private Button btnFlipCard;
-
     @FXML
     private Rectangle rFlashCard;
 
