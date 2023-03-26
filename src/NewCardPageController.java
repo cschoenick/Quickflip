@@ -32,12 +32,8 @@ public class NewCardPageController {
     private Button btnNoSave;
 
     @FXML
-    void backToStart(MouseEvent event) {
-        try {
-            Quickflip.setRoot("StartPage");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    void backToStart(MouseEvent event) throws IOException {
+        Quickflip.setRoot("StartPage");
     }
 
     @FXML

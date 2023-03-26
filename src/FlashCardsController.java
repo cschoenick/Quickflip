@@ -1,4 +1,5 @@
 import javafx.animation.Interpolator;
+import javafx.animation.PauseTransition;
 import javafx.animation.RotateTransition;
 import javafx.event.ActionEvent;
 import java.io.IOException;
@@ -66,12 +67,18 @@ public class FlashCardsController {
         RotateTransition flip = flipTransition(rFlashCard);
         flip.play();
 
+        PauseTransition pause = new PauseTransition(Duration.millis(250));
+        pause.setOnFinished(e -> {
+            btnFlipCard.setVisible(true);
+        });
+        btnFlipCard.setVisible(false);
+        pause.play();
+
     }
 
     @FXML
     private void nextCard(ActionEvent event) throws IOException {
         String nextTerm = Quickflip.reader.readLine();
-        System.out.println(nextTerm);
         String nextDefinition = Quickflip.reader.readLine();
         if (nextTerm != null && nextDefinition != null) {
             term = nextTerm;

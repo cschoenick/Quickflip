@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #33364C;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlashCardsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #33364C;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlashCardsController">
    <top>
-      <ImageView fx:id="backLogo" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      <ImageView fx:id="backLogo" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" scaleX="1.24" scaleY="1.25" BorderPane.alignment="CENTER">
          <image>
             <Image url="@../../img/QuickflipLogo.png" />
          </image>
@@ -20,23 +20,23 @@
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <Rectangle fx:id="rFlashCard" arcHeight="5.0" arcWidth="5.0" disable="true" fill="#3d415b" height="293.0" layoutX="140.0" stroke="WHITE" strokeType="INSIDE" width="521.0" />
-            <Text fx:id="tTerm" fill="WHITE" layoutX="140.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="521.21630859375">
+            <Rectangle fx:id="rFlashCard" arcHeight="5.0" arcWidth="5.0" disable="true" fill="#3d415b" height="293.0" layoutX="140.0" layoutY="100.0" scaleX="1.25" scaleY="1.25" stroke="WHITE" strokeType="INSIDE" width="521.0" />
+            <Text fx:id="tTerm" fill="WHITE" layoutX="140.0" layoutY="253.0" scaleX="1.25" scaleY="1.25" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="521.21630859375">
                <font>
                   <Font name="Now Bold" size="24.0" />
                </font>
             </Text>
-            <Button fx:id="btnFlipCard" layoutX="346.0" layoutY="252.0" mnemonicParsing="false" onAction="#flipCard" stylesheets="@Stylesheet.css" text="Flip Card" textFill="WHITE">
+            <Button fx:id="btnFlipCard" layoutX="345.0" layoutY="385.0" mnemonicParsing="false" onAction="#flipCard" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Flip Card" textFill="WHITE">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Button>
-            <Text fx:id="tDefinition" fill="WHITE" layoutX="140.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="521.21630859375">
+            <Text fx:id="tDefinition" fill="WHITE" layoutX="140.0" layoutY="253.0" scaleX="1.25" scaleY="1.25" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="521.21630859375">
                <font>
                   <Font name="Now Bold" size="24.0" />
                </font>
             </Text>
-            <Button fx:id="btnNextCard" layoutX="340.0" layoutY="325.0" mnemonicParsing="false" onAction="#nextCard" prefHeight="36.0" prefWidth="120.0" stylesheets="@Stylesheet.css" text="Next Card" textFill="WHITE">
+            <Button fx:id="btnNextCard" layoutX="340.0" layoutY="500.0" mnemonicParsing="false" onAction="#nextCard" prefHeight="36.0" prefWidth="120.0" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Next Card" textFill="WHITE">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
