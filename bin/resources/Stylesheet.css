@@ -6,7 +6,7 @@
 }
 .button:hover {
   -fx-background-color: #51577a;
-  -fx-scale-y: 1.1;
+  -fx-scale-y: 1.35;
 }
 #taTerm *.text {
   -fx-text-alignment: center;
@@ -19,19 +19,19 @@
 }
 #newBTN.button:hover {
   -fx-background-color: #92f5ff;
-  -fx-scale-y: 1.1;
+  -fx-scale-y: 1.35;
 }
 #loadBTN {
   -fx-background-color: #3f6db4;
 }
 #loadBTN.button:hover {
   -fx-background-color: #ace0ff;
-  -fx-scale-y: 1.1;
+  -fx-scale-y: 1.35;
 }
 #exitBTN {
   -fx-background-color: #ea5456;
 }
 #exitBTN.button:hover {
   -fx-background-color: #ffadb0;
-  -fx-scale-y: 1.1;
+  -fx-scale-y: 1.35;
 }

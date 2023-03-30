@@ -14,12 +14,12 @@
    <top>
       <ImageView fx:id="backLogo" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" scaleX="1.25" scaleY="1.25" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../img/QuickflipLogo.png" />
+            <Image url="@img/QuickflipLogo.png" />
          </image>
       </ImageView>
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="270.0" layoutY="79.0" prefHeight="26.0" prefWidth="47.0" scaleX="1.25" scaleY="1.25" text="Term" textFill="WHITE" translateX="-43.0">
                <font>
@@ -31,12 +31,12 @@
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="tfTerm" layoutX="392.5" layoutY="79.0" prefHeight="27.0" prefWidth="300.0" scaleX="1.25" scaleY="1.25" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff;" translateX="-43.0" AnchorPane.leftAnchor="392.5" AnchorPane.rightAnchor="307.5">
+            <TextField fx:id="tfTerm" layoutX="392.5" layoutY="79.0" prefHeight="27.0" prefWidth="300.0" scaleX="1.25" scaleY="1.25" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff;" translateX="-43.0">
                <font>
                   <Font name="Now Bold" size="13.0" />
                </font>
             </TextField>
-            <TextArea fx:id="taDefinition" layoutX="392.5" layoutY="140.0" prefHeight="155.0" prefWidth="300.0" scaleX="1.25" scaleY="1.25" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff; -fx-border-radius: 10000;" stylesheets="@Stylesheet.css" translateX="-43.0" wrapText="true" AnchorPane.leftAnchor="392.5" AnchorPane.rightAnchor="307.5">
+            <TextArea fx:id="taDefinition" layoutX="392.5" layoutY="140.0" prefHeight="155.0" prefWidth="300.0" scaleX="1.25" scaleY="1.25" style="-fx-background-color: #3d415b; -fx-text-fill: #ffffff; -fx-border-radius: 10000;" stylesheets="@Stylesheet.css" translateX="-43.0" wrapText="true">
                <font>
                   <Font name="Now Bold" size="13.0" />
                </font>
@@ -46,22 +46,22 @@
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="393.0" layoutY="325.0" mnemonicParsing="false" onAction="#showPopup" prefHeight="40.0" prefWidth="301.0" scaleX="1.25" scaleY="1.25" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Study Terms" textFill="WHITE" translateX="-43.0" AnchorPane.leftAnchor="393.0" AnchorPane.rightAnchor="306.0">
+            <Button layoutX="393.0" layoutY="325.0" mnemonicParsing="false" onAction="#showPopup" prefHeight="40.0" prefWidth="301.0" scaleX="1.25" scaleY="1.25" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Study Terms" textFill="WHITE" translateX="-43.0">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Button>
-            <TextArea fx:id="taSavePop" editable="false" layoutX="247.0" layoutY="32.5" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="466.0" prefWidth="505.0" style="-fx-text-fill: #ffffff;" stylesheets="@Stylesheet.css" text="Do you want to save your flashcards?" wrapText="true" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="248.0">
+            <TextArea fx:id="taSavePop" editable="false" layoutX="247.0" layoutY="32.5" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="466.0" prefWidth="505.0" style="-fx-text-fill: #ffffff;" stylesheets="@Stylesheet.css" text="Do you want to save your flashcards?" wrapText="true">
                <font>
                   <Font name="Now Bold" size="36.0" />
                </font>
             </TextArea>
-            <Button fx:id="btnSave" layoutX="345.0" layoutY="227.5" mnemonicParsing="false" onAction="#saveFlashcards" scaleX="1.25" scaleY="1.25" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Yes" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="345.0">
+            <Button fx:id="btnSave" layoutX="345.0" layoutY="227.5" mnemonicParsing="false" onAction="#saveFlashcards" scaleX="1.25" scaleY="1.25" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="Yes" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Now Bold" size="36.0" />
                </font>
             </Button>
-            <Button fx:id="btnNoSave" layoutX="538.0" layoutY="227.5" mnemonicParsing="false" onAction="#studyTerms" scaleX="1.25" scaleY="1.25" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="No" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="358.0">
+            <Button fx:id="btnNoSave" layoutX="538.0" layoutY="227.5" mnemonicParsing="false" onAction="#studyTerms" scaleX="1.25" scaleY="1.25" style="-fx-border-color: #ffffff;" stylesheets="@Stylesheet.css" text="No" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Now Bold" size="36.0" />
                </font>

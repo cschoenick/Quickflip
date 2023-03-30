@@ -19,7 +19,7 @@ import javafx.stage.FileChooser;
 
 public class NewCardPageController {
     @FXML
-    private ImageView backArrow;
+    private ImageView backLogo;
     @FXML
     private TextArea taDefinition;
     @FXML
@@ -32,8 +32,31 @@ public class NewCardPageController {
     private Button btnNoSave;
 
     @FXML
+    private void initialize() {
+        backLogo.setOnMouseEntered(e -> {
+            backLogo.setScaleX(1.35);
+            backLogo.setScaleY(1.35);
+        });
+        backLogo.setOnMouseExited(e -> {
+            backLogo.setScaleX(1.25);
+            backLogo.setScaleY(1.25);
+        });
+
+    }
+
+    @FXML
     void backToStart(MouseEvent event) throws IOException {
         Quickflip.setRoot("StartPage");
+    }
+
+    void hidePopup() {
+        Scene scene = Quickflip.grabScene();
+        taSavePop = (TextArea) scene.lookup("#taSavePop");
+        btnSave = (Button) scene.lookup("#btnSave");
+        btnNoSave = (Button) scene.lookup("#btnNoSave");
+        btnSave.setVisible(false);
+        btnNoSave.setVisible(false);
+        taSavePop.setVisible(false);
     }
 
     @FXML
@@ -49,6 +72,12 @@ public class NewCardPageController {
 
         tfTerm.setText("");
         taDefinition.setText("");
+
+    }
+
+    public static void writeToFile(String term, String definition) throws IOException {
+        String toWrite = term + "\n" + definition + "\n";
+        Files.write(Paths.get("flashcards.txt"), toWrite.getBytes(), StandardOpenOption.APPEND);
 
     }
 
@@ -89,21 +118,6 @@ public class NewCardPageController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    void hidePopup() {
-        Scene scene = Quickflip.grabScene();
-        taSavePop = (TextArea) scene.lookup("#taSavePop");
-        btnSave = (Button) scene.lookup("#btnSave");
-        btnNoSave = (Button) scene.lookup("#btnNoSave");
-        btnSave.setVisible(false);
-        btnNoSave.setVisible(false);
-        taSavePop.setVisible(false);
-    }
-
-    public static void writeToFile(String term, String definition) throws IOException {
-        String toWrite = term + "\n" + definition + "\n";
-        Files.write(Paths.get("flashcards.txt"), toWrite.getBytes(), StandardOpenOption.APPEND);
     }
 
 }

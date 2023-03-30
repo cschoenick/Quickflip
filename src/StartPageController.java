@@ -38,10 +38,13 @@ public class StartPageController {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Choose a .txt file");
         File selectedFile = fileChooser.showOpenDialog(null);
-        Quickflip.filePath = selectedFile.getAbsolutePath();
-        Quickflip.setRoot("FlashCards");
-        FlashCardsController startFlashCard = new FlashCardsController();
-        startFlashCard.writeFlashCards(Quickflip.filePath);
+        if (selectedFile != null) {
+            Quickflip.filePath = selectedFile.getAbsolutePath();
+            Quickflip.setRoot("FlashCards");
+            FlashCardsController startFlashCard = new FlashCardsController();
+            startFlashCard.writeFlashCards(Quickflip.filePath);
+        }
+
     }
 
 }

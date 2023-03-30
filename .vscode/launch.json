@@ -1,33 +1,33 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Quickflip",
-            "request": "launch",
-            "mainClass": "code.Quickflip",
-            "projectName": "Quickflip_10256d70"
-        },
-        {
-            "type": "java",
-            "name": "Quickflip",
-            "request": "launch",
-            "mainClass": "code.Quickflip",
-            "projectName": "Quickflip_10256d70",
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Quickflip",
-            "request": "launch",
-            "mainClass": "Quickflip",
-            "projectName": "Quickflip_10256d70",
-            "vmArgs": "--module-path /Users/codyschoenick/CSI2300/JavaFX/lib --add-modules javafx.controls,javafx.graphics,javafx.swing,javafx.fxml",
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Quickflip",
+      "request": "launch",
+      "mainClass": "code.Quickflip",
+      "projectName": "Quickflip_10256d70"
+    },
+    {
+      "type": "java",
+      "name": "Quickflip",
+      "request": "launch",
+      "mainClass": "code.Quickflip",
+      "projectName": "Quickflip_10256d70"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Quickflip",
+      "request": "launch",
+      "mainClass": "Quickflip",
+      "projectName": "Quickflip_10256d70",
+      "vmArgs": "--module-path /Users/codyschoenick/CSI2300/JavaFX/lib --add-modules javafx.controls,javafx.graphics,javafx.fxml"
+    }
+  ]
 }

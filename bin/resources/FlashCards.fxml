@@ -13,7 +13,7 @@
    <top>
       <ImageView fx:id="backLogo" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" scaleX="1.24" scaleY="1.25" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../img/QuickflipLogo.png" />
+            <Image url="@img/QuickflipLogo.png" />
          </image>
       </ImageView>
    </top>
@@ -21,17 +21,17 @@
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle fx:id="rFlashCard" arcHeight="5.0" arcWidth="5.0" disable="true" fill="#3d415b" height="293.0" layoutX="140.0" layoutY="100.0" scaleX="1.25" scaleY="1.25" stroke="WHITE" strokeType="INSIDE" width="521.0" />
-            <Text fx:id="tTerm" fill="WHITE" layoutX="140.0" layoutY="253.0" scaleX="1.25" scaleY="1.25" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="521.21630859375">
+            <Text fx:id="tTerm" fill="WHITE" layoutX="154.0" layoutY="253.0" scaleX="1.25" scaleY="1.25" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="491.61629617214203">
                <font>
                   <Font name="Now Bold" size="24.0" />
                </font>
             </Text>
-            <Button fx:id="btnFlipCard" layoutX="345.0" layoutY="385.0" mnemonicParsing="false" onAction="#flipCard" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Flip Card" textFill="WHITE">
+            <Button fx:id="btnFlipCard" layoutX="345.0" layoutY="382.0" mnemonicParsing="false" onAction="#flipCard" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Flip Card" textFill="WHITE">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>
             </Button>
-            <Text fx:id="tDefinition" fill="WHITE" layoutX="140.0" layoutY="253.0" scaleX="1.25" scaleY="1.25" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="521.21630859375">
+            <Text fx:id="tDefinition" fill="WHITE" layoutX="154.0" layoutY="253.0" scaleX="1.25" scaleY="1.25" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="491.61629617214203">
                <font>
                   <Font name="Now Bold" size="24.0" />
                </font>

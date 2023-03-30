@@ -12,7 +12,7 @@
    <center>
       <ImageView fx:id="logo" fitHeight="780.0" fitWidth="838.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../img/QuickflipLogo.png" />
+            <Image url="@img/QuickflipLogo.png" />
          </image>
       </ImageView>
    </center>

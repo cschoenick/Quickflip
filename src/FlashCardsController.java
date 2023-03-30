@@ -1,6 +1,7 @@
 import javafx.animation.Interpolator;
 import javafx.animation.PauseTransition;
 import javafx.animation.RotateTransition;
+import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import java.io.IOException;
 import javafx.util.Duration;
@@ -26,11 +27,24 @@ public class FlashCardsController {
     private Button btnFlipCard;
     @FXML
     private Rectangle rFlashCard;
-
     @FXML
     private Button btnNextCard;
+
     private String term;
     private String definition;
+
+    @FXML
+    private void initialize() {
+        backLogo.setOnMouseEntered(e -> {
+            backLogo.setScaleX(1.35);
+            backLogo.setScaleY(1.35);
+        });
+        backLogo.setOnMouseExited(e -> {
+            backLogo.setScaleX(1.25);
+            backLogo.setScaleY(1.25);
+        });
+
+    }
 
     @FXML
     private void backToStart(MouseEvent event) {
@@ -98,7 +112,8 @@ public class FlashCardsController {
             tTerm.setVisible(true);
             tDefinition.setVisible(false);
         }
-
+        ScaleTransition scale = scaleTransition(rFlashCard);
+        scale.play();
     }
 
     private RotateTransition flipTransition(Rectangle rFlashCard) {
@@ -110,4 +125,16 @@ public class FlashCardsController {
         flip.setCycleCount(1);
         return flip;
     }
+
+    private ScaleTransition scaleTransition(Rectangle rFlashCard) {
+        ScaleTransition scale = new ScaleTransition(Duration.millis(100), rFlashCard);
+        scale.setFromX(1.25);
+        scale.setFromY(1.25);
+        scale.setToX(1.5);
+        scale.setToY(1.5);
+        scale.setAutoReverse(true);
+        scale.setCycleCount(2);
+        return scale;
+    }
+
 }
