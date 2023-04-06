@@ -71,6 +71,11 @@
                   <Font name="Now Bold" size="36.0" />
                </font>
             </Button>
+            <Button fx:id="btnCancel" layoutX="448.0" layoutY="450.0" mnemonicParsing="false" onAction="#cancel" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Now Bold" size="18.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </center>

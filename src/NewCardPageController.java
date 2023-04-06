@@ -30,6 +30,8 @@ public class NewCardPageController {
     private Button btnSave;
     @FXML
     private Button btnNoSave;
+    @FXML
+    private Button btnCancel;
 
     @FXML
     private void initialize() {
@@ -51,14 +53,9 @@ public class NewCardPageController {
         Quickflip.setRoot("StartPage");
     }
 
-    void hidePopup() {
-        Scene scene = Quickflip.grabScene();
-        taSavePop = (TextArea) scene.lookup("#taSavePop");
-        btnSave = (Button) scene.lookup("#btnSave");
-        btnNoSave = (Button) scene.lookup("#btnNoSave");
-        btnSave.setVisible(false);
-        btnNoSave.setVisible(false);
-        taSavePop.setVisible(false);
+    @FXML
+    void cancel(ActionEvent event) {
+        hidePopup();
     }
 
     @FXML
@@ -74,12 +71,6 @@ public class NewCardPageController {
 
         tfTerm.setText("");
         taDefinition.setText("");
-
-    }
-
-    public static void writeToFile(String term, String definition) throws IOException {
-        String toWrite = term + "\n" + definition + "\n";
-        Files.write(Paths.get("flashcards.txt"), toWrite.getBytes(), StandardOpenOption.APPEND);
 
     }
 
@@ -104,12 +95,6 @@ public class NewCardPageController {
     void testMethod(ActionEvent event) {
         Quickflip.studyMethod = 2;
         showPopup();
-    }
-
-    void showPopup() {
-        taSavePop.setVisible(true);
-        btnSave.setVisible(true);
-        btnNoSave.setVisible(true);
     }
 
     @FXML
@@ -139,6 +124,31 @@ public class NewCardPageController {
         } else if (Quickflip.studyMethod == 2) {
             Quickflip.setRoot("Test");
         }
+    }
+
+    void showPopup() {
+        taSavePop.setVisible(true);
+        btnSave.setVisible(true);
+        btnNoSave.setVisible(true);
+        btnCancel.setVisible(true);
+    }
+
+    void hidePopup() {
+        Scene scene = Quickflip.grabScene();
+        taSavePop = (TextArea) scene.lookup("#taSavePop");
+        btnSave = (Button) scene.lookup("#btnSave");
+        btnNoSave = (Button) scene.lookup("#btnNoSave");
+        btnCancel = (Button) scene.lookup("#btnCancel");
+        btnCancel.setVisible(false);
+        btnSave.setVisible(false);
+        btnNoSave.setVisible(false);
+        taSavePop.setVisible(false);
+    }
+
+    public static void writeToFile(String term, String definition) throws IOException {
+        String toWrite = term + "\n" + definition + "\n";
+        Files.write(Paths.get("flashcards.txt"), toWrite.getBytes(), StandardOpenOption.APPEND);
+
     }
 
 }
