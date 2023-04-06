@@ -1,7 +1,31 @@
 Project Name: Quickflip
+
 Team Name: Quickflip
+
 Team Members: Cody Schoenick
 
-Description: Quickflip is intended to be a flashcard app similar to Quizlet. I hope to implement features that allow users to write multiple flashcards with terms and definitions, save their flashcards, and load flashcards from a .txt file. Given that more and more of Quizlet's features are becoming paid only and less accessible, I felt that that developing Quickflip would be a great exericse to not only learn Java but also implement something that I can use in my own life. This app should be able to help mostly students study course materials and prepare for any exams or quizzes; this app would be particularly helpful for learning new terms, vocabulary, or definitions. 
+Welcome to Quickflip! 
+Quickflip is an intuitive, user-friendly flashcard app that allows users to create or load their own flashcards, practice their flashcards, and take a multiple choice test based on their flashcards.
 
-Plan/Effort: To begin, I intend on implementing the code to allow users to add terms and definitions to the flashcards, which I anticipate to be the easiest to accomplish. After this step, I would need to design and create a graphically user interface; I would like to design something similar to Quizlet that is user friendly and visually appealing. I anticipate this step to be the most difficult to accomplish and thus I intend to focus most of my efforts on learning JavaFX and imeplementing my graphical user interface. 
+To get started, you can create your own flashcards by clicking the "New Flashcards" button. From there, enter your terms and definitions into the respective text fields. After each term (including your last term), you should click the "Next Term" button in order to ensure your flashcards are saved. From here, you will be prompted to save your flashcards, if you choose to save your flashcards, they will be saved in a .txt file where you may choose the destinition and name of the file to be saved. After saving your flashcards, you can either practice learning the terms/definitions by clicking the "Flashcards" button or take a multiple choice test by clicking "Test."
+
+	* Note: in order to be tested on your flashcards, you must have at least 4 terms and 4 definitions.
+	
+
+To load your own flashcards, your file must be a .txt file structured like the following: 
+	
+	Term 1
+	Definition 1
+	Term 2
+	Definition 2
+	Term 3
+	Definition 3
+	Etc...
+
+At anypoint during the program, you can return to the starting page by clicking the Quickflip logo at the top of the page.
+
+
+To run the program using the jar file, enter the following command in your terminal:
+	
+	java --enable-preview --module-path (path to JavaFX library) --add-modules javafx.controls,javafx.graphics,javafx.fxml -jar Quickflip.jar
+
