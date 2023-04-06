@@ -1,5 +1,25 @@
-.text-area .scroll-pane .content {
+#taTestDefinition .scroll-pane .text {
+  -fx-text-alignment: center;
+  -fx-background-radius: 0;
+}
+#taTestDefinition {
+  -fx-text-box-border: transparent;
+  -fx-background-radius: 0;
+}
+#taTestDefinition .content {
   -fx-background-color: #3d415b;
+  -fx-background-radius: 0;
+}
+#taTestDefinition .scroll-pane .content {
+  -fx-background-color: #3d415b;
+}
+#taSavePop .scroll-pane .content {
+  -fx-background-color: #3d415b;
+  -fx-background-radius: 0;
+}
+#taDefinition .scroll-pane .content {
+  -fx-background-color: #3d415b;
+  -fx-background-radius: 0;
 }
 .button {
   -fx-background-color: transparent;
@@ -34,4 +54,50 @@
 #exitBTN.button:hover {
   -fx-background-color: #ffadb0;
   -fx-scale-y: 1.35;
+}
+#btnSave {
+  -fx-background-color: #1eb8d1;
+}
+#btnSave.button:hover {
+  -fx-background-color: #92f5ff;
+  -fx-scale-y: 1.35;
+}
+#btnNoSave {
+  -fx-background-color: #ea5456;
+}
+#btnNoSave.button:hover {
+  -fx-background-color: #ffadb0;
+  -fx-scale-y: 1.35;
+}
+#btnT1 {
+  -fx-background-color: transparent;
+  -fx-border-color: #ffffff;
+}
+#btnT1.button:hover {
+  -fx-background-color: #51577a;
+  -fx-scale-y: 1;
+}
+#btnT2 {
+  -fx-background-color: transparent;
+  -fx-border-color: #ffffff;
+}
+#btnT2.button:hover {
+  -fx-background-color: #51577a;
+  -fx-scale-y: 1;
+}
+#btnT3 {
+  -fx-background-color: transparent;
+  -fx-border-color: #ffffff;
+}
+#btnT3.button:hover {
+  -fx-background-color: #51577a;
+  -fx-scale-y: 1;
+}
+#btnT4 {
+  -fx-background-color: transparent;
+  -fx-border-color: #ffffff;
+}
+#btnT4.button:hover {
+  -fx-background-color: #51577a;
+  -fx-scale-y: 1;
 }

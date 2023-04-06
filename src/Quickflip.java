@@ -1,5 +1,9 @@
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,14 +15,16 @@ public class Quickflip extends Application {
     public static BufferedReader reader;
     public static String filePath;
     public static int fileMethod = 0;
+    public static int studyMethod = 0;
+    public static int index;
+    public static ArrayList<String> termsList = new ArrayList<String>();
+    public static ArrayList<String> definitionsList = new ArrayList<String>();
+    public static Map<String, String> termsMap = new TreeMap<>();
 
     @Override
-    public void start(Stage stage) {
-        try {
-            scene = new Scene(loadFXML("StartPage"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void start(Stage stage) throws IOException {
+        scene = new Scene(loadFXML("StartPage"));
+
         stage.setScene(scene);
         stage.show();
     }

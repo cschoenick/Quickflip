@@ -46,6 +46,8 @@ public class NewCardPageController {
 
     @FXML
     void backToStart(MouseEvent event) throws IOException {
+        Quickflip.fileMethod = 0;
+        Quickflip.studyMethod = 0;
         Quickflip.setRoot("StartPage");
     }
 
@@ -83,13 +85,28 @@ public class NewCardPageController {
 
     @FXML
     void studyTerms(ActionEvent event) throws IOException {
-        Quickflip.setRoot("FlashCards");
-        FlashCardsController startFlashCard = new FlashCardsController();
-        startFlashCard.writeFlashCards("flashcards.txt");
+        if (Quickflip.studyMethod == 1) {
+            Quickflip.setRoot("FlashCards");
+            FlashCardsController startFlashCard = new FlashCardsController();
+            startFlashCard.writeFlashCards("flashcards.txt");
+        } else if (Quickflip.studyMethod == 2) {
+            Quickflip.setRoot("Test");
+        }
     }
 
     @FXML
-    void showPopup(ActionEvent event) {
+    void flashcardsMethod(ActionEvent event) {
+        Quickflip.studyMethod = 1;
+        showPopup();
+    }
+
+    @FXML
+    void testMethod(ActionEvent event) {
+        Quickflip.studyMethod = 2;
+        showPopup();
+    }
+
+    void showPopup() {
         taSavePop.setVisible(true);
         btnSave.setVisible(true);
         btnNoSave.setVisible(true);
@@ -102,21 +119,25 @@ public class NewCardPageController {
         fileChooser.setInitialFileName("myflashcards.txt");
         File file = fileChooser.showSaveDialog(null);
         String filePath = file.getAbsolutePath();
-        Quickflip.setRoot("FlashCards");
-        FlashCardsController startFlashCard = new FlashCardsController();
-        startFlashCard.writeFlashCards("flashcards.txt");
-        File sourceFile = new File("flashcards.txt");
-        File targetFile = new File(filePath);
-        try (InputStream inputStream = new FileInputStream(sourceFile);
-                OutputStream outputStream = new FileOutputStream(targetFile)) {
+        if (Quickflip.studyMethod == 1) {
+            Quickflip.setRoot("FlashCards");
+            FlashCardsController startFlashCard = new FlashCardsController();
+            startFlashCard.writeFlashCards("flashcards.txt");
+            File sourceFile = new File("flashcards.txt");
+            File targetFile = new File(filePath);
+            try (InputStream inputStream = new FileInputStream(sourceFile);
+                    OutputStream outputStream = new FileOutputStream(targetFile)) {
 
-            byte[] buffer = new byte[1024];
-            int length;
-            while ((length = inputStream.read(buffer)) > 0) {
-                outputStream.write(buffer, 0, length);
+                byte[] buffer = new byte[1024];
+                int length;
+                while ((length = inputStream.read(buffer)) > 0) {
+                    outputStream.write(buffer, 0, length);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else if (Quickflip.studyMethod == 2) {
+            Quickflip.setRoot("Test");
         }
     }
 

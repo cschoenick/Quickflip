@@ -11,7 +11,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #33364C;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlashCardsController">
    <top>
-      <ImageView fx:id="backLogo" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" scaleX="1.24" scaleY="1.25" BorderPane.alignment="CENTER">
+      <ImageView fx:id="backLogo" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#backToStart" pickOnBounds="true" preserveRatio="true" scaleX="1.25" scaleY="1.25" BorderPane.alignment="CENTER">
          <image>
             <Image url="@img/QuickflipLogo.png" />
          </image>
@@ -37,6 +37,11 @@
                </font>
             </Text>
             <Button fx:id="btnNextCard" layoutX="340.0" layoutY="500.0" mnemonicParsing="false" onAction="#nextCard" prefHeight="36.0" prefWidth="120.0" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Next Card" textFill="WHITE">
+               <font>
+                  <Font name="Now Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTest" layoutX="340.0" layoutY="550.0" mnemonicParsing="false" onAction="#enterTest" prefHeight="36.0" prefWidth="120.0" scaleX="1.25" scaleY="1.25" stylesheets="@Stylesheet.css" text="Test" textFill="WHITE">
                <font>
                   <Font name="Now Bold" size="18.0" />
                </font>

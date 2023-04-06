@@ -29,6 +29,8 @@ public class FlashCardsController {
     private Rectangle rFlashCard;
     @FXML
     private Button btnNextCard;
+    @FXML
+    private Button btnTest;
 
     private String term;
     private String definition;
@@ -47,12 +49,11 @@ public class FlashCardsController {
     }
 
     @FXML
-    private void backToStart(MouseEvent event) {
-        try {
-            Quickflip.setRoot("StartPage");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void backToStart(MouseEvent event) throws IOException {
+        Quickflip.fileMethod = 0;
+        Quickflip.studyMethod = 0;
+        Quickflip.setRoot("StartPage");
+
     }
 
     @FXML
@@ -88,6 +89,11 @@ public class FlashCardsController {
         btnFlipCard.setVisible(false);
         pause.play();
 
+    }
+
+    @FXML
+    void enterTest(ActionEvent event) throws IOException {
+        Quickflip.setRoot("Test");
     }
 
     @FXML
