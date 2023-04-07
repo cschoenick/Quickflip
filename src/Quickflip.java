@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
@@ -20,6 +21,7 @@ public class Quickflip extends Application {
     public static ArrayList<String> termsList = new ArrayList<String>();
     public static ArrayList<String> definitionsList = new ArrayList<String>();
     public static Map<String, String> termsMap = new TreeMap<>();
+    public static File selectedFile;
 
     @Override
     public void start(Stage stage) throws IOException {

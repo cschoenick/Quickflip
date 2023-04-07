@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -37,9 +36,9 @@ public class StartPageController {
         Quickflip.fileMethod = 2;
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Choose a .txt file");
-        File selectedFile = fileChooser.showOpenDialog(null);
-        if (selectedFile != null) {
-            Quickflip.filePath = selectedFile.getAbsolutePath();
+        Quickflip.selectedFile = fileChooser.showOpenDialog(null);
+        if (Quickflip.selectedFile != null) {
+            Quickflip.filePath = Quickflip.selectedFile.getAbsolutePath();
             Quickflip.setRoot("FlashCards");
             FlashCardsController startFlashCard = new FlashCardsController();
             startFlashCard.writeFlashCards(Quickflip.filePath);
