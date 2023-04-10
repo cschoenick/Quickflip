@@ -26,7 +26,7 @@ public class Quickflip extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("StartPage"));
-
+        stage.setTitle("Quickflip");
         stage.setScene(scene);
         stage.show();
     }
