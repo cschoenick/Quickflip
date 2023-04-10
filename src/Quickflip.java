@@ -19,7 +19,6 @@ public class Quickflip extends Application {
     public static int studyMethod = 0;
     public static int index;
     public static ArrayList<String> termsList = new ArrayList<String>();
-    public static ArrayList<String> definitionsList = new ArrayList<String>();
     public static Map<String, String> termsMap = new TreeMap<>();
     public static File selectedFile;
 
